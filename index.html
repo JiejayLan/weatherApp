@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Local Weather</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="docs/css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="docs/js/script.js"></script>
+
+
+</head>
+<body onload="getLocation()">
+  <div class="has-text-centered">
+    <section class="hero is-info is-bold">
+      <div class="hero-body">
+        <h1 class="title">Local Weather App</h1>
+        <h2 class="subtitle">Quick, Fast, Simple.<br>Get your current weather now.</h2>
+      </div>
+    </section>
+
+    <br><br>
+    <div class="columns is-centered ">
+      <div class="column is-one-third">
+        <div class="box" id="weatherDetails">
+          <h3 class="title is-one-third" id="location"></h3>
+          <h4 class="title is-4" id="weather"></h4>
+          <h4 class="title is-4" id="temp"></h4>
+          <button id="toggler"  onclick="toggleUnits()" class="button" >Toggle F/C</button>
+        </div>
+
+      </div>
+
+    </div>
+    <div class=" container " id="googleMap" ></div>
+
+  </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDatz4hlKKHZMFayoiiSccIH_CssDCAeSQ"></script>
+</body>
+</html>

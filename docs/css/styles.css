@@ -1,0 +1,15 @@
+html {
+    background-size: cover;
+}
+
+
+.container{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    left: 40%;
+
+}
+.button {
+
+}
